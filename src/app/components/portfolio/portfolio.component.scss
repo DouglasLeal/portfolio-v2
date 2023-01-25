@@ -1,0 +1,32 @@
+@import "../../../assets/sass/variables";
+
+.portfolio {
+    padding: 75px 0;
+
+    .portolio-title{
+        font-size: 3rem;
+    }
+
+    .filtro{
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 15px;
+        border: 3px solid $primary-color;
+        font-size: 1.5rem;
+    }
+
+    .card {
+        p {            
+            min-height: 72px;
+        }
+
+        img{
+            border-bottom: 3px solid $primary-color;
+        }
+    }
+    
+    .card-title{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,30 @@
+<main class="portfolio">
+    <h2 class="portolio-title text-center mb-5">Portfolio</h2>
+
+    <input [(ngModel)]="filter" (input)="toFilter()" type="text" class="form-control filtro mb-5" list="techList" placeholder="Filtrar por tecnologia...">
+    <datalist id="techList">
+        <option *ngFor="let category of categories">{{category}}</option>
+    </datalist>
+
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let project of projectsFiltered" class="col-sm-12 col-lg-4 mb-4">
+                <div class="card">
+                    <img [src]="project.image" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">{{project.title}}</h3>
+                        <div class="text-center">
+                            <span *ngFor="let category of project.category" class="badge text-bg-dark me-1">{{category}}</span>                            
+                        </div>
+                        <p class="card-text my-3">{{project.description}}</p>
+                    </div>
+                    
+                    <div class="card-body text-center">
+                        <a [href]="project.urlGit" class="card-link">Github</a>
+                        <a *ngIf="project.urlProd" [href]="project.urlProd" class="card-link">Demo</a>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </div>
+</main>
