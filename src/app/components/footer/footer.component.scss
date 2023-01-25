@@ -1,0 +1,32 @@
+@import "../../../assets/sass/variables";
+
+footer{
+    background-color: $bg-color;
+    color: $white;
+    padding: 15px 0;
+    text-align: center;
+    border-top: 5px solid $primary-color;
+
+    .footer-icons{
+        a{
+            color: $white;
+            transition: color .5s;
+            font-size: 4rem;
+            margin: 0 15px;
+
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+
+    .footer-copy{
+        margin-top: 1px;
+        font-size: 1.5rem;
+
+        span{
+            font-weight: 700;
+            color: $primary-color;
+        }
+    }
+}
