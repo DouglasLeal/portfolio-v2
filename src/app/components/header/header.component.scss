@@ -1,0 +1,23 @@
+@import "../../../assets/sass/variables";
+
+header{
+    position: relative;
+    background-color: $bg-color;
+    color: $white;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-header;
+
+    .header-content{
+        text-align: center;
+        background-color: $bg-color;
+        padding: 15px;
+        z-index: 1000;
+    }
+
+    .header-title{
+        font-size: 3rem;
+    }
+}
